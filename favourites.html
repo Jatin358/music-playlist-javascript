@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./music.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a href="./music.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkM-C_Kg3MxSycfzTGXrcxsLKA311g9Sd5YQ&usqp=CAU"
+                        class="image-music">
+                    </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" aria-current="page" href="./All_songs.html">All Songs</a>
+                  <a class="nav-link active" href="./favourites.html">Favourites</a>
+                  <a class="nav-link" href="./settings.html">Settings</a>
+                  <a class="nav-link" href="./aboutus.html">About Us</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <div class="songs_container" id="container">
+
+        </div>
+    </div>
+    <script>
+        let song = [
+      {
+          "title": "1904",
+          "artist": "The Tallest Man on Earth",
+          "year": "2012",
+          "web_url": "http://www.songnotes.cc/songs/78-the-tallest-man-on-earth-1904",
+          "img_url": "http://fireflygrove.com/songnotes/images/artists/TheTallestManOnEarth.jpg"
+      },
+      {
+          "title": "#40",
+          "artist": "Dave Matthews",
+          "year": "1999",
+          "web_url": "http://www.songnotes.cc/songs/119-dave-matthews-40",
+          "img_url": "http://fireflygrove.com/songnotes/images/artists/DaveMatthews.jpg"
+      },
+      {
+          "title": "40oz to Freedom",
+          "artist": "Sublime",
+          "year": "1996",
+          "web_url": "http://www.songnotes.cc/songs/45-sublime-40oz-to-freedom",
+          "img_url": "http://fireflygrove.com/songnotes/images/artists/Sublime.png"
+      },
+      {
+          "title": "#41",
+          "artist": "Dave Matthews",
+          "year": "1996",
+          "web_url": "http://www.songnotes.cc/songs/46-dave-matthews-band-41",
+          "img_url": "http://fireflygrove.com/songnotes/images/artists/DaveMatthews.jpg"
+      },
+      {
+          "title": "American Girl",
+          "artist": "Tom Petty",
+          "year": "1977",
+          "web_url": "http://www.songnotes.cc/songs/86-tom-petty-american-girl",
+          "img_url": "http://fireflygrove.com/songnotes/images/artists/TomPetty.png"
+      },
+      {
+          "title": "American Music",
+          "artist": "Violent Femmes",
+          "year": "1991",
+          "web_url": "http://www.songnotes.cc/songs/123-violent-femmes-american-music",
+          "img_url": "http://fireflygrove.com/songnotes/images/artists/ViolentFemmes.jpg"
+      },
+      {
+          "title": "American Pie",
+          "artist": "Don McLean",
+          "year": "1972",
+          "web_url": "http://www.songnotes.cc/songs/132-don-mclean-american-pie",
+          "img_url": "http://fireflygrove.com/songnotes/images/artists/DonMcLean.jpg"
+      },
+      {
+          "title": "And it Stoned Me",
+          "artist": "Van Morrison",
+          "year": "1970",
+          "web_url": "http://www.songnotes.cc/songs/27-van-morrison-and-it-stoned-me",
+          "img_url": "http://fireflygrove.com/songnotes/images/artists/VanMorrison.jpg"
+      }
+  ]
+  
+          song.map(x => {
+              printSongs(x.title, x.img_url, x.artist)
+          })
+  
+          function printSongs(imgtitle, _img, imgartist) {
+              let container = document.createElement('div')
+              container.classList.add('mySong')
+              let title = document.createElement('p')
+              title.innerHTML = imgtitle
+              title.classList.add('title')
+              let img = document.createElement('img')
+              img.src = "./images/music.png"
+              img.classList.add('songImg')
+              let artist = document.createElement('p')
+              artist.innerHTML = imgartist
+              artist.classList.add('artist')
+  
+  
+              container.appendChild(title)
+              container.appendChild(img)
+              container.appendChild(artist)
+  
+              document.getElementById('container').append(container);
+          }
+  
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./music.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+.image-music {
+    height: 100px;
+    width: 150px;
+    margin-right: 20px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: black;
+}
+
+.songs_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5%;
+
+}
+
+.songImg {
+    width: 130px;
+}
+
+.mySong {
+    width: 18.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #8b8dd7a6;
+    margin: 10px;
+    height: 230px;
+    border-radius: 10px;
+}
+
+.container-fluid {
+    padding: 0px;
+    margin: 0px;
+}
+
+.bg-light {
+    background-color: lightgrey !important;
+}
+
+.settings {
+    background: #fff;
+    height: 217px;
+    width: 50%;
+    margin-top: 15%;
+    border-radius: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 22%;
+}
+
+.aboutUs {
+    background: #fff;
+    height: 217px;
+    width: 50%;
+    margin-top: 15%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 22%;
+}
+.home_page_image{
+    width: 100%;
+    height: auto;
+}
+}
